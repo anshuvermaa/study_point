@@ -1,0 +1,59 @@
+.title {
+    color: var(--white10);
+    font-weight: 700;
+    font-size: 2rem;
+  }
+
+
+  .titleWrapper{
+    margin: 10px;
+  }
+  
+  .card__container {
+    gap: 3rem 1.25rem;
+  }
+
+  /*==================== REUSABLE CSS CLASSES ====================*/
+.container {
+    max-width: 1024px;
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+  }
+
+
+  /*==================== MEDIA QUERIES ====================*/
+/* For small devices */
+@media screen and (max-width: 320px) {
+    .container {
+      margin-left: var(--mb-1);
+      margin-right: var(--mb-1);
+    }
+  }
+
+
+
+
+  /* For medium devices */
+@media screen and (min-width: 568px) {
+    .card__container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  /* For large devices */
+@media screen and (min-width: 968px) {
+    .container {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .card__container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  
+.grid {
+    display: grid;
+  }
+  
+  
